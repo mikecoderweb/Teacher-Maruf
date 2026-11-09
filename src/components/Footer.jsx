@@ -71,9 +71,17 @@ export default function Footer() {
       </div>
 
       <div className="relative border-t border-ink/10">
-        <p className="mx-auto max-w-7xl px-5 py-6 text-xs text-ink/50 lg:px-8">
-          © {year} Teacher Maruf. {t('rights')}
-        </p>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-6 text-xs text-ink/50 lg:px-8">
+          <p>© {year} Teacher Maruf. {t('rights')}</p>
+          <a
+            href="https://fortisweb.uz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 underline underline-offset-2 transition hover:text-ink"
+          >
+            Created by FortisWeb
+          </a>
+        </div>
       </div>
     </footer>
   );
